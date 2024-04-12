@@ -15,7 +15,6 @@ from .serlizers import Subjectserlizere
 from .serlizers import Teacherserlizere
 
 
-
 from .modelsf.Class import Classes
 from .modelsf.Master import MstClass
 from .modelsf.Master import MstSubject#MstPaymentStatus

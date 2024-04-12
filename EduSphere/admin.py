@@ -16,7 +16,7 @@ admin.site.register(Classes)
 admin.site.register(CLS_SUBJ_MSTR)
 admin.site.register(MstSubject)
 admin.site.register(MstClass)
-#admin.site.register(Schools)
+admin.site.register(Schools)
 admin.site.register(Subjects)
 admin.site.register(Teachers)
 
