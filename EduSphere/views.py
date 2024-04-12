@@ -17,11 +17,12 @@ from .serlizers import Teacherserlizere
 
 
 from .modelsf.Class import Classes
-"""from models1.Master import MstSubject,MstClass#MstPaymentStatus
-from models1.School import Schools
-from models1.Subject import Subjects
-from models1.Teacher import Teachers
-from models1.cls_subj_mstr import CLS_SUBJ_MSTR
+from .modelsf.Master import MstClass
+from .modelsf.Master import MstSubject#MstPaymentStatus
+from .modelsf.School import Schools
+from .modelsf.Subject import Subjects
+from .modelsf.Teacher import Teachers
+from .modelsf.cls_subj_mstr import CLS_SUBJ_MSTR
 # Create your views here."""
 
 """def home(request):
@@ -36,7 +37,7 @@ class ClassesViewset(viewsets.ModelViewSet):
     queryset=Classes.objects.all()
     serializer_class=Classsesrlizere
 
-"""class CLS_SUBJ_MSTRViewset(viewsets.ModelViewSet):
+class CLS_SUBJ_MSTRViewset(viewsets.ModelViewSet):
     queryset=CLS_SUBJ_MSTR.objects.all()
     serializer_class=CLS_SUBJ_MSTR_serlizere
 
@@ -58,4 +59,4 @@ class SubjectsViewset(viewsets.ModelViewSet):
 
 class TeachersViewset(viewsets.ModelViewSet):
     queryset=Teachers.objects.all()
-    serializer_class=Teacherserlizere"""
+    serializer_class=Teacherserlizere

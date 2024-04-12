@@ -3,7 +3,8 @@ from EduSphere.modelsf import *
 
 from .modelsf.Class import Classes
 from .modelsf.cls_subj_mstr import CLS_SUBJ_MSTR
-from .modelsf.Master import MstClass,MstSubject
+from .modelsf.Master import MstClass
+from .modelsf.Master import MstSubject
 from .modelsf.School import Schools
 from .modelsf.Subject import Subjects
 from .modelsf.Teacher import Teachers
