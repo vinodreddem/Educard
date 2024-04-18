@@ -1,0 +1,47 @@
+CREATE TABLE School (
+    SchoolID INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Address VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20),
+    Email VARCHAR(100),
+    ImagePath VARCHAR(100),
+    Country VARCHAR(50),
+    State VARCHAR(50),
+    District VARCHAR(50),
+    Town VARCHAR(50),
+    Pin VARCHAR(10)
+);
+
+CREATE TABLE Classes (
+    ClassID INT AUTO_INCREMENT PRIMARY KEY,
+    SchoolID INT NOT NULL,
+    Description VARCHAR(100) NOT NULL,
+    FOREIGN KEY (SchoolID) REFERENCES School(SchoolID)
+);
+
+CREATE TABLE Teachers (
+    TeacherID INT PRIMARY KEY,
+    SchoolID INT NOT NULL,
+    Name VARCHAR(255) NOT NULL,
+    Phone VARCHAR(20),
+    Email VARCHAR(100),
+    Address VARCHAR(255),
+    ImagePath VARCHAR(100),
+    FOREIGN KEY (SchoolID) REFERENCES School(SchoolID)
+);
+
+CREATE TABLE Subjects (
+    SubjectID INT AUTO_INCREMENT PRIMARY KEY,
+    SchoolID INT NOT NULL,
+    SubjectName VARCHAR(50) NOT NULL,
+    Credits INT NOT NULL,
+    FOREIGN KEY (SchoolID) REFERENCES School(SchoolID)
+);
+
+CREATE TABLE CLS_SUBJ_MSTR(
+SCHOOL_ID INT,
+CLASS_ID INT,
+TeacherID INT,
+SubjectID INT,
+CR_DT DATETIME,
+UP_DT DATETIME);
