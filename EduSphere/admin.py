@@ -2,14 +2,14 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .modelsf.Class import Classes
-from .modelsf.cls_subj_mstr import CLS_SUBJ_MSTR
-from .modelsf.Master import MstSubject
-from .modelsf.Master import MstClass#MstPaymentStatus
-from .modelsf.Master import MstPaymentStatus
-from .modelsf.School import Schools
-from .modelsf.Subject import Subjects
-from .modelsf.Teacher import Teachers
+from .models.Class import Classes
+from .models.cls_subj_mstr import CLS_SUBJ_MSTR
+from .models.Master import MstSubject
+from .models.Master import MstClass#MstPaymentStatus
+from .models.Master import MstPaymentStatus
+from .models.School import Schools
+from .models.Subject import Subjects
+from .models.Teacher import Teachers
 
 
 admin.site.register(Classes)

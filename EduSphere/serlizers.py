@@ -1,13 +1,13 @@
 from rest_framework import serializers
-from EduSphere.modelsf import *
+from EduSphere.models import *
 
-from .modelsf.Class import Classes
-from .modelsf.cls_subj_mstr import CLS_SUBJ_MSTR
-from .modelsf.Master import MstClass
-from .modelsf.Master import MstSubject
-from .modelsf.School import Schools
-from .modelsf.Subject import Subjects
-from .modelsf.Teacher import Teachers
+from .models.Class import Classes
+from .models.cls_subj_mstr import CLS_SUBJ_MSTR
+from .models.Master import MstClass
+from .models.Master import MstSubject
+from .models.School import Schools
+from .models.Subject import Subjects
+from .models.Teacher import Teachers
 
 
 class Classsesrlizere(serializers.ModelSerializer):
