@@ -18,3 +18,5 @@ class MstClass(models.Model):
 
 class MstPaymentStatus():
     pass
+
+
