@@ -1,5 +1,5 @@
 DEV_DB_NAME = "EDU_CARD"
 DEV_DB_USER = "postgres"
-DEV_DB_PASSWORD = "admin"
+DEV_DB_PASSWORD = "mani"
 DEV_DB_HOST = "127.0.0.1"
 DEV_DB_PORT = "5432"

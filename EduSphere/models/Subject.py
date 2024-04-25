@@ -1,5 +1,7 @@
 from .Master import MstSubject
 from .Class import Class
+from django.db import models
+import uuid
 
 class Subject(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -7,5 +9,5 @@ class Subject(models.Model):
     class_id = models.ForeignKey(Class, on_delete=models.CASCADE)
     Description = models.CharField(max_length=100)
 
-    def __str__(self):
+    def __int__(self):
         pass    
