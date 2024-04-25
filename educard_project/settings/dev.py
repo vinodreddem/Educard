@@ -1,5 +1,5 @@
 from .common_settings import *
-
+import os
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -9,11 +9,11 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': secrets.DEV_DB_NAME,
-        'USER': secrets.DEV_DB_USER,
-        'PASSWORD': secrets.DEV_DB_PASSWORD,
-        'HOST': secrets.DEV_DB_HOST,
-        'PORT': secrets.DEV_DB_PORT,
+        'NAME': 'EDU_CARD',
+        'USER': 'postgres',
+        'PASSWORD': 'mani',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
         'OPTIONS': {
             'options': f'-c search_path=public'
         }

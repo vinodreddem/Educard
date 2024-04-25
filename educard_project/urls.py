@@ -18,11 +18,20 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+from EduSphere.views.registration import SchoolRegistrationAPIView,addon
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('school-registration/', SchoolRegistrationAPIView.as_view(), name='school-registration'),
+    path('school-registration/<int:pk>/', SchoolRegistrationAPIView.as_view(), name='school-registration'),
+    path('add/',addon,name='add'),
 ]
 
-print("vinod settings.MEDIA_URL is ", settings.MEDIA_URL)
-print("vinod settings.MEDIA_ROOT is ", settings.MEDIA_ROOT)
+#print("vinod settings.MEDIA_URL is ", settings.MEDIA_URL)
+#print("vinod settings.MEDIA_ROOT is ", settings.MEDIA_ROOT)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
