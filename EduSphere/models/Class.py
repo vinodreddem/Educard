@@ -1,7 +1,7 @@
 from django.db import models
 from .Master import MstClass
 from .School import School
-
+import uuid
 
 class Class(models.Model):
     uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -9,5 +9,5 @@ class Class(models.Model):
     school_id = models.ForeignKey(School, on_delete=models.CASCADE)
     Description = models.CharField(max_length=100)
 
-    def __str__(self):
-        pass
+    def __int__(self):
+        return self.class_id

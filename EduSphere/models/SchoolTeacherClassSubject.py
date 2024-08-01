@@ -17,5 +17,5 @@ class SchoolTeacherClassSubject(models.Model):
     class Meta:
         unique_together = ('school_id', 'class_id', 'subject_id', 'teacher_id')
 
-    def __str__(self):
+    def __int__(self):
         return self.uuid
