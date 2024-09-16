@@ -1,0 +1,5 @@
+from EduSphere.serializers.address_serializer import AddressCreateSerializer, AddressListSerializer
+from EduSphere.serializers.class_serializer import ClassCreateSerializer, ClassListSerializer
+from EduSphere.serializers.school_serializer import SchoolCreateSerializer, SchoolListSerializer
+from EduSphere.serializers.subject_serializer import SubjectCreateSerializer, SubjectListSerializer
+from EduSphere.serializers.teacher_serializer import TeacherCreateSerializer, TeacherListSerializer

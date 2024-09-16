@@ -1,0 +1,6 @@
+Basic User, Groups and Permissions -- Authentication
+
+Students, Teachers, Admins and Super Users, School, Classes, Subjects  --- EduSphere
+
+Email Notifications, WhatsApp Notifications , Communication related work -- NotifyHub
+
