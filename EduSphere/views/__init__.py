@@ -1,0 +1,1 @@
+from EduSphere.views.registration import SchoolRegistrationAPIView
